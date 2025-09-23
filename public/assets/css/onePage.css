@@ -12,10 +12,16 @@
 body
 {
     font-family: "Roboto", sans-serif;
-    font-size: clamp(1.2rem, 1.5vw, 1.5rem);
-    line-height: 1.2;
+    font-size: clamp(1.4rem, 1.5vw, 1.8rem);
+    line-height: 1.4;
     overflow-x: hidden;
     min-height: 100vh;
+}
+
+p
+{
+    font-family: "Bodoni";
+    text-align: center;
 }
 
 /* Indicateur de progression */
@@ -83,8 +89,18 @@ body
 
 .banner
 {
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0)), url(../img/banner/home.jpg) center center fixed no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0)), url(../img/banner/home.jpg) center center no-repeat;
     background-size: cover;
     height: 100vh;
     min-height: 500px;
+}
+
+.accueilTxt
+{
+    margin-top: 10%;
+}
+
+#accueilPicto
+{
+    height: 40rem;
 }
