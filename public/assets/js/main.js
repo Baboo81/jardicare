@@ -19,3 +19,15 @@ window.addEventListener('scroll', () => {
   }
 
 });
+
+///////////////////////  END  //////////////////////////////////////////////
+
+//Animation : banner_title :
+window.addEventListener('DOMContentLoaded', () => {
+    const banner = document.querySelector('.bannerTitle');
+    setTimeout(() => {
+        banner.classList.add('show');
+    }, 500);
+});
+
+///////////////////////  END  //////////////////////////////////////////////

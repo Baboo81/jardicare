@@ -25,5 +25,8 @@
         </div>
     </div>
 </section>
+{{-- Section : Banner (acceuil) END --}}
+
+
 
 @endsection

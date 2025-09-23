@@ -34,3 +34,18 @@ nav .navbar
     height: 5rem;
 }
 
+/* Animation : banner_title */
+.bannerTitle h1
+{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+   /* Classe à ajouter lorsque l'on veux afficher le titre du banner */
+   .bannerTitle.show h1
+   {
+    opacity: 1;
+    transform: translateY(0);
+   }
+
