@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root
+{
+    --VertF : #49514E;
+    --vert : #C0E17E;
+    --gris : #EAEDE7;
+    --blanc : #F5F5F5;
+}
+
+nav
+{
+    height: 8vh;
+}
+
+nav .navbar
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .nav-link
+{
+    color: var(--blanc);
+    font-family: "Bodoni Moda", serif;
+}
+
+.logo
+{
+    height: 5rem;
+}
+

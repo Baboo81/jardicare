@@ -12,6 +12,18 @@
 <a href="" id="#"></a>
 
 {{-- Section : Banner (accueil) --}}
-
+<section class="banner d-flex align-items-center justify-content-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="bannerTitle">
+                    <h1>
+                        {{ $data['banner']['banner_title'] ?? '' }}
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 @endsection
