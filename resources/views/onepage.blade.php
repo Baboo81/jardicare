@@ -122,6 +122,25 @@
 </section>
 {{-- Section : Á propos END --}}
 
+{{-- Anchor : Contact --}}
+<a href="contact"></a>
+
+{{-- Section : Contact --}}
+<section class="contact">
+    <div class="container">
+        <h2 class="text-center text-muted my-5 d-flex justify-content-center align-items-center gap-2 mb-5">
+            <span class="svg-icon">
+                <img src="{{ asset('assets/img/svg/feuille.svg') }}" alt="feuilles verte animée" class="svg-animated">
+            </span>
+            {{ $data['contact']['main_title'] ?? '' }}
+        </h2>
+        <div class="row">
+
+        </div>
+    </div>
+</section>
+{{-- Section : Contact END --}}
+
 
 
 

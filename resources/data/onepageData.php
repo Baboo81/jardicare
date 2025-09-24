@@ -58,4 +58,8 @@ return [
         "Parce qu'un jardin bien entretenu est bien plus qu'un décor, c'est un lieu de vie, de partage et de sérénité, je m'engage à travailler avec soin, professionnalisme et respect de l'environnement.",
         ],
     ],
+    'contact' => [
+        'main_title' => "Contactez-nous",
+
+    ]
 ];
