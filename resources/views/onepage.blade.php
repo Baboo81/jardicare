@@ -52,6 +52,40 @@
 <a href="services"></a>
 
 {{-- Section : Services --}}
+<section class="services">
+    <div class="container">
+        <div class="row">
+            <h2 class="text-center my-5">
+                {{ $data['services']['main_title'] ?? '' }}
+            </h2>
+            <div class="col-md-12 d-flex align-items-center justify-content-center gap-5">
+                @foreach($data['services']['cards'] as $card)
+                    <div class="card" style="width: 18rem;">
+                        <img src="{{ $card['img'] ?? '' }}" class="card-img-top" alt="{{ $card['title'] ?? '' }}">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ $card['title'] ?? '' }}</h5>
+                            <p class="card-text">{{ $card['p1'] ?? '' }}</p>
+                            @isset($card['p2'])
+                                <p class="card-text">{{ $card['p2'] }}</p>
+                            @endisset
+                            @isset($card['p3'])
+                                <p class="card-text">{{ $card['p3'] }}</p>
+                            @endisset
+
+                            @isset($card['ul'])
+                                <ul>
+                                    @foreach($card['ul'] as $li)
+                                        <li>{{ $li }}</li>
+                                    @endforeach
+                                </ul>
+                            @endisset
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </div>
+</section>
 {{-- Section : Services END --}}
 
 

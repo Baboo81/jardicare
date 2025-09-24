@@ -42,7 +42,7 @@ p
   transition: background 0.3s ease;
 }
 
-/* Cercle intérieur pour l'effet de "remplissage circulaire" */
+    /* Cercle intérieur pour l'effet de "remplissage circulaire" */
 .inner-circle
 {
   position: relative;
@@ -78,8 +78,9 @@ p
     transform: translateY(3px);
   }
 }
-/* END */
+/* Indicateur de progression END */
 
+/* Section : Accueil */
 .bannerTitle
 {
     font-family: "Bodoni Moda", serif;
@@ -104,3 +105,12 @@ p
 {
     height: 40rem;
 }
+/* Section : Accueil  END */
+
+/* Section : Services */
+.services
+{
+    min-height: 800px;
+    background-color: var(--vert);
+}
+/* Section : Services END */
