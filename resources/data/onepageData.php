@@ -50,4 +50,12 @@ return [
             ],
         ],
     ],
+    'a_propos' => [
+    'main_title' => "À propos",
+    'paragraphs' => [
+        "Amoureux de la nature depuis toujours, j'ai choisi de faire de ma passion pour le jardinage mon métier. Chaque jardin est pour moi un espace unique, vivant et inspirant, qui mérite toute mon attention et mon savoir-faire.",
+        "Mon objectif est simple : vous offrir un extérieur à votre image, où il fait bon vivre et se ressourcer. Taille, entretien, aménagements ou créations sur mesure, je mets mon expérience et mon exigence de qualité au service de vos espaces verts.",
+        "Parce qu'un jardin bien entretenu est bien plus qu'un décor, c'est un lieu de vie, de partage et de sérénité, je m'engage à travailler avec soin, professionnalisme et respect de l'environnement.",
+        ],
+    ],
 ];

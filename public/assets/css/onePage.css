@@ -18,15 +18,20 @@ body
     min-height: 100vh;
 }
 
-p
+p, ul, li
 {
     font-family: "Bodoni";
-    text-align: center;
+    font-size: clamp(1.5rem, 1.3rem, 1rem);
 }
 
 h2
 {
     font-size: clamp(3rem, 2rem, 1.8rem);
+}
+
+h3
+{
+    font-size: clamp(2rem, 1.8rem, 1.5rem);
 }
 
 
@@ -55,7 +60,7 @@ h2
   position: relative;
   width: 50px;
   height: 50px;
-  background: var(--beige);
+  background: var(--blanc);
   border-radius: 50%;
 }
 
@@ -154,7 +159,7 @@ h2
 
 .card-img-fixed
 {
-    height: 200px;
+    height: 300px;
     object-fit: cover;
 }
 
@@ -165,3 +170,15 @@ h2
     }
 }
 /* Section : Services END */
+
+/* Section : à propos */
+.aPropos
+{
+    min-height: 700px;
+}
+
+.profil
+{
+    border-radius: 50%;
+}
+/* Section : à propos END */

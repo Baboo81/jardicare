@@ -33,7 +33,7 @@
         <div class="row align-items-center">
             <div class="col-md-5 my-5">
                 <article class="my-5">
-                    <p class="text-muted">
+                    <p class="text-muted text-center">
                         {{ $data['accueil']['txt'] ?? '' }}
                     </p>
                 </article>
@@ -66,17 +66,17 @@
                     <div class="card h-100 w-100 rounded-4">
                         <img src="{{ $card['img'] ?? '' }}" class="card-img-top card-img-fixed" alt="{{ $card['title'] ?? '' }}">
                         <div class="card-body d-flex flex-column justify-content-center">
-                            <h5 class="card-title text-center">{{ $card['title'] ?? '' }}</h5>
-                            <p class="card-text text-center">{{ $card['p1'] ?? '' }}</p>
+                            <h3 class="card-title text-center my-5 text-muted">{{ $card['title'] ?? '' }}</h3>
+                            <p class="card-text text-center text-muted">{{ $card['p1'] ?? '' }}</p>
                             @isset($card['p2'])
-                                <p class="card-text text-center">{{ $card['p2'] }}</p>
+                                <p class="card-text text-center text-muted">{{ $card['p2'] }}</p>
                             @endisset
                             @isset($card['p3'])
-                                <p class="card-text text-center">{{ $card['p3'] }}</p>
+                                <p class="card-text text-center text-muted">{{ $card['p3'] }}</p>
                             @endisset
 
                             @isset($card['ul'])
-                                <ul>
+                                <ul class="text-muted">
                                     @foreach($card['ul'] as $li)
                                         <li>{{ $li }}</li>
                                     @endforeach
@@ -90,6 +90,37 @@
     </div>
 </section>
 {{-- Section : Services END --}}
+
+{{-- Anchor : Á propos --}}
+<a href="apropos"></a>
+
+{{-- Section : Á propos --}}
+<section class="aPropos">
+    <div class="container">
+        <h2 class="text-center text-muted my-5 d-flex justify-content-center align-items-center gap-2 mb-5">
+            <span class="svg-icon">
+                <img src="{{ asset('assets/img/svg/feuille.svg') }}" alt="feuilles verte animée" class="svg-animated">
+            </span>
+            {{ $data['a_propos']['main_title'] ?? '' }}
+        </h2>
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-md-4">
+                <img src="{{ asset('assets/img/about/profil.jpg') }}" alt="Photo de l'entrepreneur de jardin" class="img-fluid profil">
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-7 mt-5">
+                <article>
+                    @foreach ($data['a_propos']['paragraphs'] as $paragraph )
+                        <p class="text-muted text-center">
+                            {{ $paragraph }}
+                        </p>
+                    @endforeach
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+{{-- Section : Á propos END --}}
 
 
 

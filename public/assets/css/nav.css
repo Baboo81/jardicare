@@ -44,9 +44,9 @@ nav .navbar
 }
 
    /* Classe à ajouter lorsque l'on veux afficher le titre du banner */
-   .bannerTitle.show h1
-   {
+.bannerTitle.show h1
+{
     opacity: 1;
     transform: translateY(0);
-   }
+}
 
