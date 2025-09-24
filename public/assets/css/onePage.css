@@ -11,7 +11,7 @@
 
 body
 {
-    font-family: "Roboto", sans-serif;
+    font-family: "Bodoni";
     font-size: clamp(1.4rem, 1.5vw, 1.8rem);
     line-height: 1.4;
     overflow-x: hidden;
@@ -23,6 +23,13 @@ p
     font-family: "Bodoni";
     text-align: center;
 }
+
+h2
+{
+    font-size: clamp(3rem, 2rem, 1.8rem);
+}
+
+
 
 /* Indicateur de progression */
 
@@ -107,10 +114,54 @@ p
 }
 /* Section : Accueil  END */
 
+/* Animation : feuille */
+.svg-animated
+{
+    width: 70px;       /* taille de l'icône */
+    height: 70px;
+    animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float
+{
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px); /* monte de 10px */
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+/* Animation : feuille END */
+
+
 /* Section : Services */
 .services
 {
-    min-height: 800px;
+    min-height: 1500px;
     background-color: var(--vert);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blocCards
+{
+    margin-top: 10% !important;
+}
+
+.card-img-fixed
+{
+    height: 200px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px)
+{
+    .card-img-fixed {
+        height: 150px;  /* hauteur réduite sur les petits écrans */
+    }
 }
 /* Section : Services END */

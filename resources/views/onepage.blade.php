@@ -52,24 +52,27 @@
 <a href="services"></a>
 
 {{-- Section : Services --}}
-<section class="services">
+<section class="services d-flex justify-content-center align-items-center my-5">
     <div class="container">
-        <div class="row">
-            <h2 class="text-center my-5">
-                {{ $data['services']['main_title'] ?? '' }}
-            </h2>
-            <div class="col-md-12 d-flex align-items-center justify-content-center gap-5">
-                @foreach($data['services']['cards'] as $card)
-                    <div class="card" style="width: 18rem;">
-                        <img src="{{ $card['img'] ?? '' }}" class="card-img-top" alt="{{ $card['title'] ?? '' }}">
-                        <div class="card-body">
-                            <h5 class="card-title">{{ $card['title'] ?? '' }}</h5>
-                            <p class="card-text">{{ $card['p1'] ?? '' }}</p>
+        <h2 class="text-center text-muted my-5 d-flex justify-content-center align-items-center gap-2 mb-5">
+            <span class="svg-icon">
+                <img src="{{ asset('assets/img/svg/feuille.svg') }}" alt="feuilles verte animée" class="svg-animated">
+            </span>
+            {{ $data['services']['main_title'] ?? '' }}
+        </h2>
+        <div class="row g-4 my-5 blocCards">
+            @foreach($data['services']['cards'] as $card)
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card h-100 w-100 rounded-4">
+                        <img src="{{ $card['img'] ?? '' }}" class="card-img-top card-img-fixed" alt="{{ $card['title'] ?? '' }}">
+                        <div class="card-body d-flex flex-column justify-content-center">
+                            <h5 class="card-title text-center">{{ $card['title'] ?? '' }}</h5>
+                            <p class="card-text text-center">{{ $card['p1'] ?? '' }}</p>
                             @isset($card['p2'])
-                                <p class="card-text">{{ $card['p2'] }}</p>
+                                <p class="card-text text-center">{{ $card['p2'] }}</p>
                             @endisset
                             @isset($card['p3'])
-                                <p class="card-text">{{ $card['p3'] }}</p>
+                                <p class="card-text text-center">{{ $card['p3'] }}</p>
                             @endisset
 
                             @isset($card['ul'])
@@ -81,8 +84,8 @@
                             @endisset
                         </div>
                     </div>
-                @endforeach
-            </div>
+                </div>
+            @endforeach
         </div>
     </div>
 </section>

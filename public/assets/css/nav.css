@@ -27,6 +27,7 @@ nav .navbar
 {
     color: var(--blanc);
     font-family: "Bodoni Moda", serif;
+    font-size: clamp(1.4rem, 1.2rem, 1rem);
 }
 
 .logo
