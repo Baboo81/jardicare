@@ -49,7 +49,7 @@
 {{-- Section : Accueil END --}}
 
 {{-- Anchor : Services --}}
-<a href="services"></a>
+<a href="" id="services"></a>
 
 {{-- Section : Services --}}
 <section class="services d-flex justify-content-center align-items-center">
@@ -92,7 +92,7 @@
 {{-- Section : Services END --}}
 
 {{-- Anchor : Á propos --}}
-<a href="apropos"></a>
+<a href="#" id="aPropos"></a>
 
 {{-- Section : Á propos --}}
 <section class="aPropos">
@@ -123,7 +123,7 @@
 {{-- Section : Á propos END --}}
 
 {{-- Anchor : Contact --}}
-<a href="contact"></a>
+<a href="#" id="contact"></a>
 
 {{-- Section : Contact --}}
 <section class="contact">

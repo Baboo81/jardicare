@@ -12,7 +12,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="#services">
                         {{ $data['nav']['services'] ?? '' }}
                     </a>
                 </li>
@@ -22,12 +22,12 @@
                     </a>
                 </li>--}}
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="#aPropos">
                         {{  $data['nav']['a_propos'] ?? '' }}
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="#contact">
                         {{ $data['nav']['contact'] ?? '' }}
                     </a>
                 </li>
