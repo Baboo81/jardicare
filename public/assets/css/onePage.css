@@ -117,6 +117,11 @@ h3
 /* Indicateur de progression END */
 
 /* Section : Accueil */
+.accueil
+{
+    padding: 200px 0 !important;
+}
+
 .bannerTitle
 {
     font-family: "Bodoni Moda", serif;
@@ -169,7 +174,7 @@ h3
 /* Section : Services */
 .services
 {
-    padding: 100px 0;
+    padding: 200px 0;
     background-color: var(--vert);
     display: flex;
     align-items: center;
@@ -207,7 +212,7 @@ h3
 /* Section : à propos */
 .aPropos
 {
-    padding: 100px 0;
+    padding: 200px 0;
     background-color: var(--VertF);
 }
 
@@ -233,11 +238,18 @@ h3
 /* Section : à propos END */
 
 /* Section : Contact*/
-.registration-form{
+.contact
+{
+    padding: 200px 0;
+}
+
+.registration-form
+{
 	padding: 50px 0;
 }
 
-.registration-form form{
+.registration-form form
+{
     background-color: var(--gris);
     max-width: 600px;
     margin: auto;
@@ -246,7 +258,8 @@ h3
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.registration-form .form-icon{
+.registration-form .form-icon
+{
 	text-align: center;
     background-color: #5891ff;
     border-radius: 50%;
@@ -259,13 +272,15 @@ h3
     line-height: 100px;
 }
 
-.registration-form .item{
+.registration-form .item
+{
 	border-radius: 20px;
     margin-bottom: 25px;
     padding: 10px 20px;
 }
 
-.registration-form .create-account{
+.registration-form .create-account
+{
     border-radius: 30px;
     padding: 10px 20px;
     font-size: 18px;
@@ -276,7 +291,8 @@ h3
     margin-top: 20px;
 }
 
-.registration-form .social-media{
+.registration-form .social-media
+{
     max-width: 600px;
     background-color: #fff;
     margin: auto;
@@ -289,12 +305,14 @@ h3
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
 }
 
-.registration-form .social-icons{
+.registration-form .social-icons
+{
     margin-top: 30px;
     margin-bottom: 16px;
 }
 
-.registration-form .social-icons a{
+.registration-form .social-icons a
+{
     font-size: 23px;
     margin: 0 3px;
     color: #5691ff;
@@ -308,12 +326,14 @@ h3
     line-height: 45px;
 }
 
-.registration-form .social-icons a:hover{
+.registration-form .social-icons a:hover
+{
     text-decoration: none;
     opacity: 0.6;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 576px)
+{
     .registration-form form{
         padding: 50px 20px;
     }
