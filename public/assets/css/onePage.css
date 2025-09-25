@@ -18,6 +18,11 @@ body
     min-height: 100vh;
 }
 
+section
+{
+    padding: 100px 0;
+}
+
 p, ul, li
 {
     font-family: "Bodoni";
@@ -164,7 +169,7 @@ h3
 /* Section : Services */
 .services
 {
-    min-height: 1700px !important;
+    padding: 100px 0;
     background-color: var(--vert);
     display: flex;
     align-items: center;
@@ -202,7 +207,7 @@ h3
 /* Section : à propos */
 .aPropos
 {
-    min-height: 900px;
+    padding: 100px 0;
     background-color: var(--VertF);
 }
 
@@ -218,12 +223,12 @@ h3
 
 .aboutTitle
 {
-    margin-top: 10% !important;
+    margin-top: 0;
 }
 
 .blocAbout
 {
-    margin-top: 10%;
+    margin-top: 0;
 }
 /* Section : à propos END */
 

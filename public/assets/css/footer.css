@@ -9,6 +9,11 @@
     --blanc : #F5F5F5;
 }
 
+h6
+{
+    color: var(--vert);
+    font-size: 1.3rem;
+}
 
 footer
 {
@@ -20,22 +25,23 @@ footer h6
     font-family: 'Playfair Display', serif;
     margin-bottom: 40px;
     position: relative;
+    display: inline-block;
 }
 
 footer h6:after
 {
-    position: absolute;
     content: "";
+    display: block;
+    width: 40px;     /* longueur de la ligne (tu peux ajuster) */
+    height: 1px;     /* épaisseur */
     background: grey;
-    width: 12%;
-    height: 1px;
-    left: 0;
-    bottom: -20px;
+    margin-top: 5px; /* espace entre le texte et la ligne */
+    text-align: left; /* facultatif */
 }
 
 .btn-footer
 {
-    color: grey;
+    color: var(--vert);
     text-decoration: none;
     border: 1px solid;
     border-radius: 43px;
@@ -113,4 +119,10 @@ a:hover
 {
     border-right: 1px solid grey;
     height: 100%;
+}
+
+#mapid
+{
+    height: 250px !important;
+    border-radius: 10px;
 }

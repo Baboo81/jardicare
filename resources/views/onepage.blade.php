@@ -54,7 +54,7 @@
 {{-- Section : Services --}}
 <section class="services d-flex justify-content-center align-items-center">
     <div class="container">
-        <h2 class="text-center text-muted my-5 d-flex justify-content-center align-items-center gap-2 mb-5">
+        <h2 class="text-center text-muted d-flex justify-content-center align-items-center gap-2 mb-5">
             <span class="svg-icon">
                 <img src="{{ asset('assets/img/svg/feuille.svg') }}" alt="feuilles verte animée" class="svg-animated">
             </span>
@@ -239,8 +239,4 @@
     </div>
 </section>
 {{-- Section : Contact END --}}
-
-
-
-
 @endsection

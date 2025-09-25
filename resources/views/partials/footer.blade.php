@@ -1,61 +1,35 @@
 <footer class="container-fluid bg-grey py-5">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-8">
                 <div class="row">
-                    <div class="col-md-6 ">
-                    <div class="logo-part">
-                        <img src="https://i.ibb.co/sHZz13b/logo.png" class="w-50 logo-footer" >
-                        <p>7637 Laurel Dr. King Of Prussia, PA 19406</p>
-                        <p>Use this tool as test data for an automated system or find your next pen</p>
+                    <div class="col-md-6">
+                        <div class="logo-part p-3 text-center">
+                            <img src="assets/img/svg/jardiCare.png" class="w-50 logo-footer" alt="Logo Jardi Care">
+                            <p>
+                                Avenue du Onzième Zouave 15 - Ottignies-Louvain-La-Neuve 1342
+                            </p>
+                            <div id="mapid" class="container-fluid" style="height: 150px;"></div>
+                        </div>
                     </div>
-                    </div>
-                    <div class="col-md-6 px-4">
-                    <h6> About Company</h6>
-                    <p>But horizontal lines can only be a full pixel high.</p>
-                    <a href="#" class="btn-footer"> More Info </a><br>
-                    <a href="#" class="btn-footer"> Contact Us</a>
+                    <div class="col-md-6 px-4 text-center">
+                        <h6> Coordonnées </h6>
+                        <p>+32(0)473391930</p>
+                        <p>TVA BE 0897 840 512</p>
+                        <a href="#" class="btn-footer"> Contactez-nous</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="row">
-                    <div class="col-md-6 px-4">
-                    <h6> Help us</h6>
-                    <div class="row ">
-                        <div class="col-md-6">
-                            <ul>
-                                <li> <a href="#"> Home</a> </li>
-                                <li> <a href="#"> About</a> </li>
-                                <li> <a href="#"> Service</a> </li>
-                                <li> <a href="#"> Team</a> </li>
-                                <li> <a href="#"> Help</a> </li>
-                                <li> <a href="#"> Contact</a> </li>
-                            </ul>
-                        </div>
+                <div class="col-md-4 text-center">
+                    <div class="row">
                         <div class="col-md-6 px-4">
-                            <ul>
-                                <li> <a href="#"> Cab Faciliy</a> </li>
-                                <li> <a href="#"> Fax</a> </li>
-                                <li> <a href="#"> Terms</a> </li>
-                                <li> <a href="#"> Policy</a> </li>
-                                <li> <a href="#"> Refunds</a> </li>
-                                <li> <a href="#"> Paypal</a> </li>
-                            </ul>
+                        <h6> Mail </h6>
+                        <p>Contactez-moi par mail en cliquant sur l'enveloppe ci-dessous</p>
+                        <div class="row ">
+                            <div class="col-md-6">
+
+                            </div>
                         </div>
-                    </div>
-                    </div>
-                    <div class="col-md-6 ">
-                        <h6> Newsletter</h6>
-                        <div class="social">
-                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        </div>
-                        <form class="form-footer my-3">
-                            <input type="text"  placeholder="search here...." name="search">
-                            <input type="button" value="Go" >
-                        </form>
-                        <p>That's technology limitation of LCD monitors</p>
                     </div>
                 </div>
             </div>
