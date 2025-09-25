@@ -34,6 +34,25 @@ h3
     font-size: clamp(2rem, 1.8rem, 1.5rem);
 }
 
+/* Btn */
+.btn
+{
+    color: var(--vert);
+    border-color: var(--vert);
+    border-radius: 20px;
+    transition: 0.5s;
+    min-width: 10rem;
+    min-height: 3rem;
+    font-weight: bold;
+}
+
+.btn:hover,
+.btn:active
+{
+    color: #fff;
+    background-color: var(--vert);
+}
+/* BTN END */
 
 
 /* Indicateur de progression */

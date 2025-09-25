@@ -30,6 +30,34 @@ nav .navbar
     font-size: clamp(1.4rem, 1.2rem, 1rem);
 }
 
+/*Animation : line*/
+.navbar-nav .nav-link
+{
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Ligne avant hover (invisible) */
+.navbar-nav .nav-link::after
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;           /* largeur initiale 0 */
+    height: 2px;        /* épaisseur de la ligne */
+    background-color: var(--vert); /* couleur de la ligne */
+    transition: width 0.3s ease; /* animation */
+}
+
+/* Hover : la ligne s’étend sur toute la largeur */
+.navbar-nav .nav-link:hover::after
+{
+    width: 100%;
+}
+/*Animation : line END*/
+
 .logo
 {
     height: 5rem;

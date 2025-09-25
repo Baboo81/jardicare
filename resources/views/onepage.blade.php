@@ -136,6 +136,30 @@
         </h2>
         <div class="row d-flex justify-content-center align-items-center">
             <div class="col-md-8 registration-form">
+
+                {{-- Messages : suuccess/echec --}}
+
+                {{-- Message de succès --}}
+                @if(session('success'))
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        {{ session('success') }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                @endif
+
+                {{-- Messages d'erreurs globaux --}}
+                @if($errors->any())
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <ul class="mb-0">
+                            @foreach($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                @endif
+                {{-- Messages : suuccess/echec END --}}
+
                 <form method="POST" action="{{ route('contact.send') }}">
                     @csrf
 
@@ -206,8 +230,8 @@
                     </div>
 
                     {{-- Btn --}}
-                    <div class="form-group my-5">
-                        <button type="submit" class="btn btn-block btn-success">Envoyer</button>
+                    <div class="form-group d-flex justify-content-center my-5">
+                        <button type="submit" class="btn">Envoyer</button>
                     </div>
                 </form>
             </div>
