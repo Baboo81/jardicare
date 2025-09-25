@@ -137,23 +137,77 @@
         <div class="row d-flex justify-content-center align-items-center">
             <div class="col-md-8 registration-form">
                 <form method="POST" action="{{ route('contact.send') }}">
+                    @csrf
+
+                    {{-- HneyPot --}}
+                    <input type="text" name="website" style="display:none">
+
+                    {{-- Nom --}}
                     <div class="form-group">
-                        <input type="text" class="form-control item" id="name" placeholder="Veuillez indiquer votre nom de famille">
+                        <input type="text"
+                               class="form-control item @error('name') is-invalid @enderror"
+                               id="name" name="name"
+                               value="{{ old('name') }}"
+                               placeholder="Veuillez indiquer votre nom de famille">
+                        @error('name')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                        @enderror
                     </div>
+
+                    {{-- Prénom --}}
                     <div class="form-group">
-                        <input type="text" class="form-control item" id="first-name" placeholder="Veillez indiquer votre prénom">
+                        <input type="text"
+                               class="form-control item @error('first_name') is-invalid @enderror"
+                               id="first-name"
+                               name="first_name"
+                               value="{{ old('first_name') }}"
+                               placeholder="Veillez indiquer votre prénom">
+                        @error('first_name')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                        @enderror
                     </div>
+
+                    {{-- Email --}}
                     <div class="form-group">
-                        <input type="text" class="form-control item" id="email" placeholder="Veuillez indiquer votre adresse mail">
+                        <input type="text"
+                               class="form-control item @error('email') is-invalid @enderror"
+                               id="email"
+                               name="email"
+                               value="{{ old('email') }}"
+                               placeholder="Veuillez indiquer votre adresse mail">
+                        @error('email')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                        @enderror
                     </div>
+
+                    {{-- Téléphone --}}
                     <div class="form-group">
-                        <input type="text" class="form-control item" id="phone-number" placeholder="Veuillez indiquer votre numéro de téléphone">
+                        <input type="text"
+                               class="form-control item @error('phone') is-invalid @enderror"
+                               id="phone-number"
+                               name="phone"
+                               value="{{ old('phone') }}"
+                               placeholder="Veuillez indiquer votre numéro de téléphone">
+                        @error('phone')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                        @enderror
                     </div>
+
+                   {{-- Message --}}
                     <div class="form-group">
-                        <textarea class="form-control" id="message" name="message" rows="4" placeholder="Laissez-nous votre message"></textarea>
+                        <textarea class="form-control @error('message') is-invalid @enderror"
+                                  id="message"
+                                  name="message"
+                                  rows="4"
+                                  placeholder="Laissez-nous votre message"></textarea>
+                        @error('message')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                        @enderror
                     </div>
-                    <div class="form-group">
-                        <button type="button" class="btn btn-block create-account">Envoyer</button>
+
+                    {{-- Btn --}}
+                    <div class="form-group my-5">
+                        <button type="submit" class="btn btn-block btn-success">Envoyer</button>
                     </div>
                 </form>
             </div>
