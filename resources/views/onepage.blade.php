@@ -52,7 +52,7 @@
 <a href="services"></a>
 
 {{-- Section : Services --}}
-<section class="services d-flex justify-content-center align-items-center my-5">
+<section class="services d-flex justify-content-center align-items-center">
     <div class="container">
         <h2 class="text-center text-muted my-5 d-flex justify-content-center align-items-center gap-2 mb-5">
             <span class="svg-icon">
@@ -60,7 +60,7 @@
             </span>
             {{ $data['services']['main_title'] ?? '' }}
         </h2>
-        <div class="row g-4 my-5 blocCards">
+        <div class="row g-4 blocCards">
             @foreach($data['services']['cards'] as $card)
                 <div class="col-md-4 d-flex justify-content-center">
                     <div class="card h-100 w-100 rounded-4">
@@ -97,21 +97,21 @@
 {{-- Section : Á propos --}}
 <section class="aPropos">
     <div class="container">
-        <h2 class="text-center text-muted my-5 d-flex justify-content-center align-items-center gap-2 mb-5">
-            <span class="svg-icon">
-                <img src="{{ asset('assets/img/svg/feuille.svg') }}" alt="feuilles verte animée" class="svg-animated">
-            </span>
-            {{ $data['a_propos']['main_title'] ?? '' }}
-        </h2>
-        <div class="row d-flex justify-content-center align-items-center">
+        <div class="row d-flex justify-content-center align-items-center blocAbout">
+              <h2 class="text-center aboutTitle my-5 d-flex justify-content-center align-items-center gap-2 mb-5">
+                    <span class="svg-icon">
+                        <img src="{{ asset('assets/img/svg/feuille.svg') }}" alt="feuilles verte animée" class="svg-animated">
+                    </span>
+                    {{ $data['a_propos']['main_title'] ?? '' }}
+                </h2>
             <div class="col-md-4">
                 <img src="{{ asset('assets/img/about/profil.jpg') }}" alt="Photo de l'entrepreneur de jardin" class="img-fluid profil">
             </div>
             <div class="col-md-1"></div>
             <div class="col-md-7 mt-5">
-                <article>
+                <article class="mx-5">
                     @foreach ($data['a_propos']['paragraphs'] as $paragraph )
-                        <p class="text-muted text-center">
+                        <p class="text-center aboutTxt">
                             {{ $paragraph }}
                         </p>
                     @endforeach
@@ -134,8 +134,29 @@
             </span>
             {{ $data['contact']['main_title'] ?? '' }}
         </h2>
-        <div class="row">
-
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-md-8 registration-form">
+                <form method="POST" action="{{ route('contact.send') }}">
+                    <div class="form-group">
+                        <input type="text" class="form-control item" id="name" placeholder="Veuillez indiquer votre nom de famille">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control item" id="first-name" placeholder="Veillez indiquer votre prénom">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control item" id="email" placeholder="Veuillez indiquer votre adresse mail">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control item" id="phone-number" placeholder="Veuillez indiquer votre numéro de téléphone">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="message" name="message" rows="4" placeholder="Laissez-nous votre message"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="btn btn-block create-account">Envoyer</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </section>
