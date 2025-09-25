@@ -37,8 +37,8 @@ h3
 /* Btn */
 .btn
 {
-    color: var(--vert);
-    border-color: var(--vert);
+    color: var(--VertF);
+    border-color: var(--VertF);
     border-radius: 20px;
     transition: 0.5s;
     min-width: 10rem;
@@ -50,7 +50,7 @@ h3
 .btn:active
 {
     color: #fff;
-    background-color: var(--vert);
+    background-color: var(--VertF);
 }
 /* BTN END */
 
@@ -233,7 +233,7 @@ h3
 }
 
 .registration-form form{
-    background-color: #fff;
+    background-color: var(--gris);
     max-width: 600px;
     margin: auto;
     padding: 50px 70px;

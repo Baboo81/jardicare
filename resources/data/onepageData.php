@@ -60,6 +60,8 @@ return [
     ],
     'contact' => [
         'main_title' => "Contactez-nous",
+    ],
+    'footer' => [
 
-    ]
+    ],
 ];

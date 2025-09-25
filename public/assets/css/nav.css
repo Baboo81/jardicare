@@ -12,6 +12,7 @@
 nav
 {
     height: 8vh;
+    z-index: 1000;
 }
 
 nav .navbar
@@ -61,6 +62,13 @@ nav .navbar
 .logo
 {
     height: 5rem;
+}
+
+.sticky
+{
+    transition: 2.6s esa;
+    background-color: #000;
+    opacity: 70%;
 }
 
 /* Animation : banner_title */

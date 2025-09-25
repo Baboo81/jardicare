@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light position-fixed bg-transparent w-100">
+<nav class="navbar navbar-expand-lg navbar-light position-fixed w-100">
     <div class="container-fluid">
         <img src="/assets/img/svg/jardiCare.png" alt="Logo JardiCare" class="logo">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
