@@ -30,7 +30,7 @@
 {{-- Section : Accueil --}}
 <section class="accueil pt-5 pb-5">
     <div class="container">
-        <div class="row align-items-center">
+        <div class="row align-items-center scroll-element">
             <div class="col-md-5 my-5">
                 <article class="my-5">
                     <p class="text-muted text-center">
@@ -234,12 +234,6 @@
                         <button type="submit" class="btn">Envoyer</button>
                     </div>
                 </form>
-                @if(session('success'))
-                    <div class="alert alert-success alert-dismissible fade show" role="alert">
-                        {{ session('success') }}
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                    </div>
-                @endif
             </div>
         </div>
     </div>
