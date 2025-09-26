@@ -135,7 +135,7 @@
             {{ $data['contact']['main_title'] ?? '' }}
         </h2>
         <div class="row d-flex justify-content-center align-items-center">
-            <div class="col-md-8 registration-form">
+            <div class="col-md-8 registration-form" id="contact-form">
 
                 {{-- Messages : suuccess/echec --}}
 
@@ -221,10 +221,10 @@
                     <div class="form-group">
                         <textarea class="form-control @error('message') is-invalid @enderror"
                                   id="message"
-                                  name="message"
+                                  name="content"
                                   rows="4"
                                   placeholder="Laissez-nous votre message"></textarea>
-                        @error('message')
+                        @error('content')
                             <div class="invalid-feedback">{{ $message }}</div>
                         @enderror
                     </div>
@@ -234,6 +234,12 @@
                         <button type="submit" class="btn">Envoyer</button>
                     </div>
                 </form>
+                @if(session('success'))
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        {{ session('success') }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                @endif
             </div>
         </div>
     </div>

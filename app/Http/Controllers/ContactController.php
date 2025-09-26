@@ -15,7 +15,7 @@ class ContactController extends Controller
             'first_name' => 'required|string|max:255',
             'email' => 'required|email|max:255',
             'phone' => 'nullable|regex:/^[0-9+\s()-]+$/|max:20',
-            'message' => 'required|string|max:2000',
+            'content' => 'required|string|max:2000',
         ]);
 
         //Honeypot anti-spam
@@ -29,7 +29,7 @@ class ContactController extends Controller
             'first_name' =>$request->first_name,
             'email' =>$request->email,
             'phone' => $request->phone,
-            'message' => $request->message,
+            'content' => $request->content,
         ];
 
         //Envoi du mail
@@ -38,6 +38,6 @@ class ContactController extends Controller
                     ->subject('Jardi Care : nouveau message reçu !');
         });
 
-        return back()->with('succes', 'Votre message a bien été envoyé ! Merci !');
+        return back()->with('success', 'Votre message a bien été envoyé ! Merci !')->withFragment('contact-form');
     }
 }

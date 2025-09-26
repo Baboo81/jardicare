@@ -6,4 +6,4 @@
 <p><strong>Téléphone :</strong> {{ $phone ?? 'Non renseigné' }} </p>
 
 <p><strong>Message :</strong></p>
-<p> {{ $message }}</p>
+<p> {{ $content }}</p>

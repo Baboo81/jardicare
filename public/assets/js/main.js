@@ -46,6 +46,23 @@ window.addEventListener('DOMContentLoaded', () => {
 
 ///////////////////////  END  //////////////////////////////////////////////
 
+//Mise à niveau : affichage success
+
+document.addEventListener('DOMContentLoaded', () => {
+    const alertSuccess = document.querySelector('.alert-success');
+    if(alertSuccess){
+        // Scroll automatique jusqu'au message
+        alertSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    const alertError = document.querySelector('.alert-danger');
+    if(alertError){
+        alertError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+});
+
+///////////////////////  END  //////////////////////////////////////////////
+
 //Footer map:
 
 //Create map:
