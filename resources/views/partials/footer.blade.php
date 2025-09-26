@@ -23,9 +23,9 @@
                 <div class="col-md-4 text-center">
                     <div class="row">
                         <div class="col-md-6 px-4">
-                            <h6> Mail </h6>
+                            <h6>Pour nous contacter</h6>
                             <p>Contactez-moi par mail en cliquant sur l'enveloppe ci-dessous</p>
-                            <a href="mailto:odefosseux@jardicare.be">
+                            <a href="mailto:odefosseux@jardicare.be" class="IconMail">
                                 <img src="assets/img/svg/mail.svg" alt="Icon représentant une enveloppe">
                             </a>
                         <div class="row ">

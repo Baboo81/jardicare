@@ -385,6 +385,19 @@ h3
     opacity: 0.6;
 }
 
+input::placeholder,
+textarea::placeholder
+{
+    font-size: 1rem;
+    color: #888; /* optionnel, pour voir le changement */
+}
+
+/* Pour compatibilité avec anciens navigateurs */
+input::-webkit-input-placeholder { font-size: 1rem; }
+input::-moz-placeholder { font-size: 1rem; }
+input:-ms-input-placeholder { font-size: 1rem; }
+input:-moz-placeholder { font-size: 1rem; }
+
 @media (max-width: 576px)
 {
     .registration-form form{

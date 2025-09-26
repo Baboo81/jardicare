@@ -76,7 +76,7 @@ footer h6:after
 {
     border: none;
     background:#232323;
-        margin-left: -5px;
+    margin-left: -5px;
     color: #fff;
     outline: none;
     border-radius: 0 16px 16px 0;
@@ -132,4 +132,13 @@ footer a
 {
     text-decoration: none;
     color: var(--vert);
+}
+
+.IconMail img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.IconMail:hover img {
+    transform: scale(1.2); /* agrandit l'enveloppe */
+    opacity: 0.8;           /* rend légèrement transparente */
 }
