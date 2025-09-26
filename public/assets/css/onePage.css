@@ -222,6 +222,27 @@ h3
 {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 1rem; /* arrondi doux */
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card:hover
+{
+    background-color: #f8f9fa;
+    transform: translateY(-10px) scale(1); /* légère élévation et zoom */
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2); /* ombre portée plus marquée */
+    z-index: 10; /* pour passer au-dessus des autres éléments si nécessaire */
+}
+
+.card:hover::after
+{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0.1);
+    border-radius: 1rem;
 }
 
 .card-img-fixed

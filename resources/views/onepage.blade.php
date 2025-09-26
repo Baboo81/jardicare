@@ -109,7 +109,7 @@
             </div>
             <div class="col-md-1"></div>
             <div class="col-md-7 mt-5">
-                <article class="mx-5">
+                <article class="mx-5 scroll-element">
                     @foreach ($data['a_propos']['paragraphs'] as $paragraph )
                         <p class="text-center aboutTxt">
                             {{ $paragraph }}

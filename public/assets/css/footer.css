@@ -18,6 +18,7 @@ h6
 footer
 {
     background-color: var(--VertF);
+    color: var(--blanc);
 }
 
 footer h6

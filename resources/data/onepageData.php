@@ -61,4 +61,10 @@ return [
     'contact' => [
         'main_title' => "Contactez-nous",
     ],
+    'footer' => [
+        'webmaster' =>[
+            'name' => "Kenko-web - 2025",
+            'url' => "https://kenko-web.be",
+        ]
+    ]
 ];
