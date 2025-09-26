@@ -127,3 +127,9 @@ a:hover
     height: 250px !important;
     border-radius: 10px;
 }
+
+footer a
+{
+    text-decoration: none;
+    color: var(--vert);
+}
