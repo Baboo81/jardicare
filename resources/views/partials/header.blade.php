@@ -14,6 +14,46 @@
                         'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
             })(window, document, 'script', 'dataLayer', 'GTM-PXTDTSDJ');</script>
         <!-- End Google Tag Manager -->
+        <!-- Configuration Klaro -->
+            <script type="application/javascript">
+                var klaroConfig = {
+                    version: 1,
+                    elementID: 'klaro',
+                    groups: [
+                        {
+                            name: 'analytics',
+                            title: 'Statistiques',
+                            description: 'Google Tag Manager et Google Analytics pour analyser l’usage du site.',
+                            purposes: ['analytics'],
+                            required: false,
+                            cookies: [],
+                        }
+                    ],
+                    services: [
+                        {
+                            name: 'google-tag-manager',
+                            title: 'Google Tag Manager',
+                            purposes: ['analytics'],
+                            cookies: [/^_ga/, /^_gid/],
+                            optOut: false,
+                            required: false,
+                            callback: function(consent, service) {
+                                if (consent) {
+                                    (function(w,d,s,l,i){
+                                        w[l]=w[l]||[];w[l].push({'gtm.start':
+                                        new Date().getTime(),event:'gtm.js'});
+                                        var f=d.getElementsByTagName(s)[0],
+                                            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+                                        j.async=true;
+                                        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+                                        f.parentNode.insertBefore(j,f);
+                                    })(window,document,'script','dataLayer','GTM-PXTDTSDJ');
+                                }
+                            }
+                        }
+                    ]
+                };
+            </script>
         <!--Favicon links-->
         <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
@@ -22,6 +62,8 @@
         <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
+        <!-- Klaro CSS (CDN) -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/klaro@0.7.22/dist/klaro.css" />
         <!-- CSS : Leaflet.js -->
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
             integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
@@ -37,6 +79,8 @@
         <link rel="stylesheet" href="{{ asset('assets/css/nav.css') }}">
         <!-- css footer -->
         <link rel="stylesheet" href="{{ asset('assets/css/footer.css') }}">
+        <!-- Klaro JS (CDN) -->
+        <script src="https://cdn.jsdelivr.net/npm/klaro@0.7.22/dist/klaro.js" defer></script>
         <!--Script Leaflet-->
         <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
             integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="

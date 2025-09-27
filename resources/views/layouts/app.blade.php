@@ -5,6 +5,9 @@
     @include('partials.header')
 </head>
     <body>
+        <!-- Conteneur pour Klaro (bannière modal) -->
+        <div id="klaro"></div>
+
         <header>
             @include('partials.nav')
         </header>
@@ -14,5 +17,6 @@
         <footer>
             @include('partials.footer')
         </footer>
+
     </body>
 </html>
