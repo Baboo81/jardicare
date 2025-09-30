@@ -66,16 +66,16 @@
             </span>
             {{ $data['services']['main_title'] ?? '' }}
         </h2>
-        <div class="row g-4 blocCards">
+        <div class="row g-5 blocCards d-flex justify-content-center alig-items-center">
             @foreach($data['services']['cards'] as $card)
-                <div class="col-md-4 d-flex justify-content-center">
+                <div class="col-md-8">
                     <div class="card h-100 w-100 rounded-4">
                         <img src="{{ $card['img'] ?? '' }}" class="card-img-top card-img-fixed" alt="{{ $card['title'] ?? '' }}">
                         <div class="card-body d-flex flex-column justify-content-center p-5">
                             <h3 class="card-title text-center text-muted mb-5">{{ $card['title'] ?? '' }}</h3>
                             <p class="card-text text-center text-muted">{{ $card['p1'] ?? '' }}</p>
                             @isset($card['p2'])
-                                <p class="card-text text-center text-muted">{{ $card['p2'] }}</p>
+                                <p class="card-text text-muted">{{ $card['p2'] }}</p>
                             @endisset
                             @isset($card['p3'])
                                 <p class="card-text text-center text-muted">{{ $card['p3'] }}</p>
