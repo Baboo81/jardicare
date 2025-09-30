@@ -9,7 +9,7 @@
 </div>
 
 {{-- Anchor : Home --}}
-<a href="" id="#"></a>
+<a id="#"></a>
 
 {{-- Section : Banner --}}
 <section class="banner d-flex align-items-center justify-content-center">
@@ -31,6 +31,12 @@
 <section class="accueil pt-5 pb-5">
     <div class="container">
         <div class="row align-items-center scroll-element">
+            <h1 class="text-center text-muted d-flex justify-content-center align-items-center gap-2 mb-5">
+                <span class="svg-icon">
+                    <img src="{{ asset('assets/img/svg/feuille.svg') }}" alt="feuilles verte animée" class="svg-animated">
+                </span>
+                {{ $data['accueil']['main_title'] ?? '' }}
+            </h1>
             <div class="col-md-5 my-5">
                 <article class="my-5">
                     <p class="text-muted text-center">
@@ -49,7 +55,7 @@
 {{-- Section : Accueil END --}}
 
 {{-- Anchor : Services --}}
-<a href="" id="services"></a>
+<a id="services"></a>
 
 {{-- Section : Services --}}
 <section class="services d-flex justify-content-center align-items-center">
@@ -65,8 +71,8 @@
                 <div class="col-md-4 d-flex justify-content-center">
                     <div class="card h-100 w-100 rounded-4">
                         <img src="{{ $card['img'] ?? '' }}" class="card-img-top card-img-fixed" alt="{{ $card['title'] ?? '' }}">
-                        <div class="card-body d-flex flex-column justify-content-center">
-                            <h3 class="card-title text-center my-5 text-muted">{{ $card['title'] ?? '' }}</h3>
+                        <div class="card-body d-flex flex-column justify-content-center p-5">
+                            <h3 class="card-title text-center text-muted mb-5">{{ $card['title'] ?? '' }}</h3>
                             <p class="card-text text-center text-muted">{{ $card['p1'] ?? '' }}</p>
                             @isset($card['p2'])
                                 <p class="card-text text-center text-muted">{{ $card['p2'] }}</p>
@@ -76,7 +82,7 @@
                             @endisset
 
                             @isset($card['ul'])
-                                <ul class="text-muted">
+                                <ul class="text-muted my-3">
                                     @foreach($card['ul'] as $li)
                                         <li>{{ $li }}</li>
                                     @endforeach
@@ -92,7 +98,7 @@
 {{-- Section : Services END --}}
 
 {{-- Anchor : Á propos --}}
-<a href="#" id="aPropos"></a>
+<a id="aPropos"></a>
 
 {{-- Section : Á propos --}}
 <section class="aPropos">
@@ -123,7 +129,7 @@
 {{-- Section : Á propos END --}}
 
 {{-- Anchor : Contact --}}
-<a href="#" id="contact"></a>
+<a id="contact"></a>
 
 {{-- Section : Contact --}}
 <section class="contact">

@@ -260,6 +260,11 @@ h3
         height: 150px;  /* hauteur réduite sur les petits écrans */
     }
 }
+
+ul > li
+{
+    font-weight: bold;
+}
 /* Section : Services END */
 
 /* Section : à propos */

@@ -13,9 +13,9 @@ class OnePageController extends Controller
 
         //Passer les paramètres, inclure les fichiers CSS :
         return view('onepage', [
-            'pageTitle' => "Jardicare",
-            'metaDesc' => "Découvrez Jardicare le site de Olivier Defosseux, Olivier Defosseux est entrepreneur de jardin, il déploie son activité du côté de Wavre",
-            'metaKeyWords' => "Olivier Defosseux, entrepreneur de jardin indépendant, jardinier",
+            'pageTitle' => "Jardicare - Jardinier & Entrepreneur de jardin à Ottignies, Louvain-La-Neuve, Wavre, Lasne, Rixensart",
+            'metaDesc' => "Jardicare, le site de Olivier Defosseux, jardinier et entrepreneur de jardin en Brabant wallon. Entretien de jardin, taille de haies, aménagement paysager à Ottignies, Louvain-la-Neuve, Wavre, Rixensart, Lasne.",
+            'metaKeyWords' => "Jardicare, jardinier Ottignies, jardinier Louvain-la-Neuve, jardinier Wavre, entrepreneur de jardin Brabant wallon, entretien jardin, taille haies, aménagement paysager, tonte gazons, plantations, élagage.",
             'resetCss' => "assets/css/reset.css",
             'customCss' => "assets/css/onePage.css",
             'data' => $data,
