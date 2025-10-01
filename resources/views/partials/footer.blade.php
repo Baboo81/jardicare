@@ -21,21 +21,22 @@
                 <a href="#contact" class="btn-footer mt-2">Contactez-nous</a>
             </div>
             <div class="col-md-3">
-                <div class="">
-                    <h6 class="my-5">Pour nous contacter</h6>
-                    <p>Cliquer sur l'enveloppe ci-dessous</p>
+                <h6 class="my-5">Pour nous contacter</h6>
+                <p>Cliquer sur l'enveloppe ci-dessous</p>
+                <div class="d-flex flex-column justify-content-center align-items-center">
                     <a href="mailto:odefosseux@jardicare.be" class="IconMail d-block">
-                        <img src="assets/img/svg/mail.svg" alt="Icon représentant une enveloppe" class="p-4">
+                        <img src="assets/img/svg/mail.svg" alt="Icon représentant une enveloppe" class="img-enveloppe d-block">
                     </a>
                 </div>
             </div>
 
             <!-- Colonne Horaires -->
-                <div class="col-md-3 mb-4 d-flex flex-column align-items-center justify-content-start">
-                        <h6 class="my-5">Horaires</h6>
-                        <p class="mb-1">Lundi → Samedi</p>
-                        <p class="fw-bold text-success">7h00 – 20h00</p>
-
+            <div class="col-md-3 mb-4 d-flex flex-column align-items-start justify-content-start">
+                <h6 class="text-start my-5">Horaires</h6>
+                    <article>
+                        <p class="mb-1">Du Lundi au Samedi</p>
+                        <p class="fw-bold text-horaire">7h00 – 20h00</p>
+                    </article>
                 </div>
             </div>
 

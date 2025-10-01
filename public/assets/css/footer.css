@@ -139,11 +139,23 @@ footer a
     color: var(--vert);
 }
 
-.IconMail img {
+.IconMail img
+{
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.IconMail:hover img {
+.IconMail:hover img
+{
     transform: scale(1.2); /* agrandit l'enveloppe */
     opacity: 0.8;           /* rend légèrement transparente */
+}
+
+.text-horaire
+{
+    color: var(--vert);
+}
+
+.img-enveloppe
+{
+    width: 8rem;
 }

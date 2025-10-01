@@ -26,7 +26,7 @@ section
 p, ul, li
 {
     font-family: "Bodoni";
-    font-size: clamp(1.5rem, 1.3rem, 1rem);
+    font-size: clamp(1.5rem, 1.3rem, 1rem) !important;
 }
 
 h2
