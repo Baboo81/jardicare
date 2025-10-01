@@ -12,7 +12,12 @@
 h6
 {
     color: var(--vert);
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+}
+
+p
+{
+    font-size: clamp(1.2rem, 1rem, 1.5rem);
 }
 
 footer

@@ -72,7 +72,12 @@
                     <div class="card h-100 w-100 rounded-4">
                         <img src="{{ $card['img'] ?? '' }}" class="card-img-top card-img-fixed" alt="{{ $card['title'] ?? '' }}">
                         <div class="card-body d-flex flex-column justify-content-center p-5">
-                            <h3 class="card-title text-center text-muted mb-5">{{ $card['title'] ?? '' }}</h3>
+                            <h3 class="card-title text-center text-muted mb-5">
+                                <span class="secateur-icon">
+                                    <img src="{{ asset('assets/img/svg/secateur.svg') }}" alt="Icon représentant un secateur" class="icon-title">
+                                </span>
+                                {{ $card['title'] ?? '' }}
+                            </h3>
                             <p class="card-text text-center text-muted">{{ $card['p1'] ?? '' }}</p>
                             @isset($card['p2'])
                                 <p class="card-text text-muted">{{ $card['p2'] }}</p>

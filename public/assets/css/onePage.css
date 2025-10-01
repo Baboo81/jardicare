@@ -266,6 +266,19 @@ ul > li
     font-weight: bold;
     text-align: start;
 }
+
+.secateur-icon
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icon-title
+{
+    width: 5rem;
+    height: auto;
+    vertical-align: middle;
+}
 /* Section : Services END */
 
 /* Section : à propos */
