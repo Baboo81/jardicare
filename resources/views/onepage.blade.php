@@ -66,15 +66,15 @@
             </span>
             {{ $data['services']['main_title'] ?? '' }}
         </h2>
-        <div class="row g-4 blocCards d-flex flex-column align-items-center">
+        <div class="row g-4 blocCards d-flex flex-column align-items-center justify-content-center">
             @foreach($data['services']['cards'] as $card)
                 <div class="col-12">
                     <div class="card card-hover h-100 rounded-4 text-white position-relative overflow-hidden">
-                        <img src="{{ $card['img'] ?? '' }}" class="card-img-top card-img-fixed" alt="{{ $card['title'] ?? '' }}">
+                        <img src="{{ $card['img'] ?? '' }}" class="card-img" alt="{{ $card['title'] ?? '' }}">
 
                         <!-- Overlay avec titre -->
                         <div class="card-overlay d-flex flex-column justify-content-center align-items-center text-center p-4">
-                            <h3 class="card-title mb-2">
+                            <h3 class="card-title my-2">
                                 <span class="secateur-icon">
                                     <img src="{{ asset('assets/img/svg/secateur.svg') }}" alt="Icon représentant un secateur" class="icon-title">
                                 </span>
