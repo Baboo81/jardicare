@@ -178,6 +178,44 @@ h3
 }
 /* Animation txt END */
 
+/********* Ajustement Responsive *********/
+.accueil {
+    padding: 150px 0; /* défaut desktop */
+}
+
+@media (max-width: 768px) {
+    .accueil {
+        padding: 80px 20px; /* réduis padding sur mobile */
+    }
+}
+
+/* Titre principal */
+.bannerTitle {
+    font-family: "Bodoni Moda", serif;
+    color: var(--blanc);
+    letter-spacing: .2rem; /* moins serré sur mobile */
+    text-align: center;
+}
+
+/* Texte */
+.accueil p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Image accueil */
+#accueilPicto {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Pour éviter que le texte et l’image soient collés sur mobile */
+.col-md-5,
+.col-md-7 {
+    margin-bottom: 2rem;
+}
+/********* Ajustement Responsive END *********/
+
 /* Section : Accueil  END */
 
 /* Animation : feuille */
@@ -206,20 +244,34 @@ h3
 /* Section : Services */
 .services
 {
-    padding: 200px 0;
+    padding: 150px 0;
     background-color: var(--vert);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+@media (max-width : 768px)
+{
+    .services
+    {
+        padding: 80px 20px;
+    }
+}
+
 .blocCards
 {
     margin-top: 10% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .card
 {
+    width: 100%;
+    max-height: 600px;
+    margin-bottom: 2rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -228,12 +280,18 @@ h3
     cursor: pointer;
 }
 
+.card-body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .card:hover
 {
-    background-color: #f8f9fa;
-    transform: translateY(-10px) scale(1); /* légère élévation et zoom */
-    box-shadow: 0 15px 25px rgba(0,0,0,0.2); /* ombre portée plus marquée */
-    z-index: 10; /* pour passer au-dessus des autres éléments si nécessaire */
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 .card:hover::after
@@ -247,10 +305,10 @@ h3
 
 .card-img-fixed
 {
-    height: 300px;
+    width: 100%;
+    height: 600px;
     object-fit: cover;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    transition: transform 0.5s ease;
 }
 
 @media (max-width: 768px)
@@ -261,10 +319,51 @@ h3
     }
 }
 
+/* Overlay semi-transparent */
+.card-overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4); /* léger fondu noir */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s ease;
+}
+
+/* Contenu caché par défaut */
+.card-content
+{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+}
+
+/* Hover */
+.card-hover:hover .card-img-fixed
+{
+    transform: scale(1.05); /* léger zoom de l'image */
+}
+
+.card-hover:hover .card-overlay
+{
+    background: rgba(0,0,0,0.7); /* overlay plus sombre au hover */
+}
+
+.card-hover:hover .card-content
+{
+    opacity: 1;
+    transform: translateY(0);
+}
+
 ul > li
 {
-    font-weight: bold;
     text-align: start;
+    color: var(--vert);
 }
 
 .secateur-icon
@@ -279,6 +378,7 @@ ul > li
     height: auto;
     vertical-align: middle;
 }
+
 /* Section : Services END */
 
 /* Section : à propos */

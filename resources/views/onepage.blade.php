@@ -66,33 +66,37 @@
             </span>
             {{ $data['services']['main_title'] ?? '' }}
         </h2>
-        <div class="row g-5 blocCards d-flex justify-content-center alig-items-center">
+        <div class="row g-4 blocCards d-flex flex-column align-items-center">
             @foreach($data['services']['cards'] as $card)
-                <div class="col-md-7">
-                    <div class="card h-100 w-100 rounded-4">
+                <div class="col-12">
+                    <div class="card card-hover h-100 rounded-4 text-white position-relative overflow-hidden">
                         <img src="{{ $card['img'] ?? '' }}" class="card-img-top card-img-fixed" alt="{{ $card['title'] ?? '' }}">
-                        <div class="card-body d-flex flex-column justify-content-center p-5">
-                            <h3 class="card-title text-center text-muted mb-5">
+
+                        <!-- Overlay avec titre -->
+                        <div class="card-overlay d-flex flex-column justify-content-center align-items-center text-center p-4">
+                            <h3 class="card-title mb-2">
                                 <span class="secateur-icon">
                                     <img src="{{ asset('assets/img/svg/secateur.svg') }}" alt="Icon représentant un secateur" class="icon-title">
                                 </span>
                                 {{ $card['title'] ?? '' }}
                             </h3>
-                            <p class="card-text text-center text-muted">{{ $card['p1'] ?? '' }}</p>
-                            @isset($card['p2'])
-                                <p class="card-text text-muted">{{ $card['p2'] }}</p>
-                            @endisset
-                            @isset($card['p3'])
-                                <p class="card-text text-center text-muted">{{ $card['p3'] }}</p>
-                            @endisset
-
-                            @isset($card['ul'])
-                                <ul class="text-muted my-3">
-                                    @foreach($card['ul'] as $li)
-                                        <li>{{ $li }}</li>
-                                    @endforeach
-                                </ul>
-                            @endisset
+                            <!-- Contenu caché -->
+                            <div class="card-content">
+                                <p>{{ $card['p1'] ?? '' }}</p>
+                                @isset($card['p2'])
+                                    <p>{{ $card['p2'] }}</p>
+                                @endisset
+                                @isset($card['p3'])
+                                    <p>{{ $card['p3'] }}</p>
+                                @endisset
+                                @isset($card['ul'])
+                                    <ul>
+                                        @foreach($card['ul'] as $li)
+                                            <li>{{ $li }}</li>
+                                        @endforeach
+                                    </ul>
+                                @endisset
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -93,7 +93,6 @@ nav .navbar
 .offcanvasColor
 {
     background-color: var(--VertF);
-    opacity: 80%;
 }
 
 .offcanvas-title
