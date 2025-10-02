@@ -12,6 +12,19 @@ window.addEventListener('scroll', function(){
     }
 });
 
+// Animation navbar-toggler
+const toggler = document.querySelector('.navbar-toggler');
+const offcanvas = document.getElementById('mobileMenu');
+const bsOffcanvas = new bootstrap.Offcanvas(offcanvas);
+
+  offcanvas.addEventListener('show.bs.offcanvas', () => {
+    toggler.classList.remove('collapsed');
+  });
+
+  offcanvas.addEventListener('hide.bs.offcanvas', () => {
+    toggler.classList.add('collapsed');
+  });
+
 ///////////////////////  END  //////////////////////////////////////////////
 
 // Animation : progression :

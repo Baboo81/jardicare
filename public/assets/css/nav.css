@@ -71,4 +71,55 @@ nav .navbar
     opacity: 70%;
 }
 
+/* Hamburger custom */
+.navbar-toggler {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.toggler-icon {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: var(--vert);
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+.offcanvasColor
+{
+    background-color: var(--VertF);
+    opacity: 80%;
+}
+
+.offcanvas-title
+{
+    color: var(--vert);
+    font-size: clamp(1.8rem, 1.5rem, 2rem);
+}
+
+/* Animations */
+.navbar-toggler.collapsed .toggler-icon:nth-child(1) {
+  transform: rotate(0) translate(0, 0);
+}
+.navbar-toggler.collapsed .toggler-icon:nth-child(2) {
+  opacity: 1;
+}
+.navbar-toggler.collapsed .toggler-icon:nth-child(3) {
+  transform: rotate(0) translate(0, 0);
+}
+
+.navbar-toggler:not(.collapsed) .toggler-icon:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.navbar-toggler:not(.collapsed) .toggler-icon:nth-child(2) {
+  opacity: 0;
+}
+.navbar-toggler:not(.collapsed) .toggler-icon:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
 

@@ -68,7 +68,7 @@
         </h2>
         <div class="row g-5 blocCards d-flex justify-content-center alig-items-center">
             @foreach($data['services']['cards'] as $card)
-                <div class="col-md-8">
+                <div class="col-md-7">
                     <div class="card h-100 w-100 rounded-4">
                         <img src="{{ $card['img'] ?? '' }}" class="card-img-top card-img-fixed" alt="{{ $card['title'] ?? '' }}">
                         <div class="card-body d-flex flex-column justify-content-center p-5">
