@@ -37,7 +37,10 @@ h2
 
 h3
 {
-    font-size: clamp(2rem, 1.8rem, 1.5rem);
+    margin-top: 25% !important;
+    font-size: clamp(2.2rem, 2rem, 1.8rem);
+    font-weight: bold;
+    color: var(--vert) !important;
 }
 
 /* Btn */
@@ -341,6 +344,12 @@ h3
     }
 }
 
+.card-title
+{
+    flex: 0 0 auto;
+    margin: auto 0;
+}
+
 /* Overlay semi-transparent */
 .card-overlay
 {
@@ -355,12 +364,14 @@ h3
     justify-content: center;
     align-items: center;
     transition: background 0.3s ease;
+    padding: 1.4rem 2.4rem;
 }
 
 .card-overlay h3.card-title
 {
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
 /* Contenu caché par défaut */
@@ -369,6 +380,7 @@ h3
     opacity: 0;
     transform: translateY(20px);
     transition: all 0.4s ease;
+    margin-top: auto;
 }
 
 /* Hover */
@@ -410,6 +422,19 @@ h3
     }
 }
 
+@media (max-width: 768px)
+{
+    .card-overlay
+    {
+        padding: 1rem; /* moins sur petit écran */
+    }
+
+    .card-overlay h3.card-title
+    {
+        font-size: 1.5rem; /* réduit le titre sur mobile */
+    }
+}
+
 ul > li
 {
     text-align: start;
@@ -434,16 +459,18 @@ ul > li
 /* Section : à propos */
 .aPropos
 {
-    padding: 200px 0;
+    padding: 150px 0;
     background-color: var(--VertF);
 }
 
 .profil
 {
     border-radius: 50%;
+    max-width: 100%;
+    height: auto;
 }
 
-.aboutTxt, .aboutTitle
+.aboutTitle, .aboutTxt
 {
     color: var(--blanc);
 }
@@ -455,9 +482,53 @@ ul > li
 
 .blocAbout
 {
-    margin-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }
-/* Section : à propos END */
+
+.aboutTxt
+{
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Scroll animation */
+.scroll-element
+{
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1.5s ease-out;
+}
+
+.scroll-element.visible
+{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px)
+{
+    .aPropos
+    {
+        padding: 80px 20px;
+    }
+
+    .aboutTxt
+    {
+        font-size: 1rem;
+        text-align: center !important;
+    }
+
+    .profil
+    {
+        margin: 0 auto;
+    }
+}
+/* Section : à propos END*/
 
 /* Section : Contact*/
 .contact

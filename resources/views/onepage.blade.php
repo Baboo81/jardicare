@@ -60,21 +60,21 @@
 {{-- Section : Services --}}
 <section class="services d-flex justify-content-center align-items-center">
     <div class="container">
-        <h2 class="text-center text-muted d-flex justify-content-center align-items-center gap-2 mb-5">
+        <h2 class="text-center text-muted  gap-2 mb-5">
             <span class="svg-icon">
                 <img src="{{ asset('assets/img/svg/feuille.svg') }}" alt="feuilles verte animée" class="svg-animated">
             </span>
             {{ $data['services']['main_title'] ?? '' }}
         </h2>
-        <div class="row g-4 blocCards d-flex flex-column align-items-center justify-content-center">
+        <div class="row g-4 blocCards d-flex justify-content-center align-items-center">
             @foreach($data['services']['cards'] as $card)
-                <div class="col-12">
+                <div class="col-12 d-flex justify-content-center align-items-center">
                     <div class="card card-hover h-100 rounded-4 text-white position-relative overflow-hidden">
                         <img src="{{ $card['img'] ?? '' }}" class="card-img" alt="{{ $card['title'] ?? '' }}">
 
                         <!-- Overlay avec titre -->
                         <div class="card-overlay d-flex flex-column justify-content-center align-items-center text-center p-4">
-                            <h3 class="card-title my-2">
+                            <h3 class="card-title">
                                 <span class="secateur-icon">
                                     <img src="{{ asset('assets/img/svg/secateur.svg') }}" alt="Icon représentant un secateur" class="icon-title">
                                 </span>
@@ -119,11 +119,10 @@
                     </span>
                     {{ $data['a_propos']['main_title'] ?? '' }}
                 </h2>
-            <div class="col-md-4">
+            <div class="col-lg-4 col-md-6 text-center mb-4 mb-md-0">
                 <img src="{{ asset('assets/img/about/profil.jpg') }}" alt="Photo de l'entrepreneur de jardin" class="img-fluid profil">
             </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-7 mt-5">
+            <div class="col-lg-8 col-md-6 mt-5">
                 <article class="mx-5 scroll-element">
                     @foreach ($data['a_propos']['paragraphs'] as $paragraph )
                         <p class="text-center aboutTxt">

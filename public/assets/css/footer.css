@@ -159,3 +159,58 @@ footer a
 {
     width: 8rem;
 }
+
+/* Responsive */
+@media (max-width: 768px)
+{
+    footer .logo-part
+    {
+        border-right: none;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    footer .col-md-3,
+    footer .col-md-4
+    {
+        text-align: center;
+    }
+
+    footer #mapid
+    {
+        margin: 0 auto;
+        height: 200px;
+    }
+
+    footer .btn-footer
+    {
+        margin: 1rem 0;
+    }
+
+    footer .img-enveloppe
+    {
+        width: 6rem;
+    }
+
+    footer h6
+    {
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+    }
+
+    footer p, footer a
+    {
+        font-size: 1rem;
+    }
+
+    footer .d-flex
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .text-md-start
+    {
+        text-align: center !important;
+    }
+}
