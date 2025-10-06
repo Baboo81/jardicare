@@ -17,6 +17,7 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <div class="bannerTitle">
+                    <img src="/assets/img/svg/jardiCare.png" alt="Logo JardiCare" class="logo-banner p-3">
                     <h1>
                         {{ $data['banner']['banner_title'] ?? '' }}
                     </h1>
@@ -67,6 +68,7 @@
             {{ $data['services']['main_title'] ?? '' }}
         </h2>
         <div class="row g-4 blocCards d-flex justify-content-center align-items-center">
+            <div class="logo-container"></div>
             @foreach($data['services']['cards'] as $card)
                 <div class="col-12 d-flex justify-content-center align-items-center">
                     <div class="card card-hover h-100 rounded-4 text-white position-relative overflow-hidden">

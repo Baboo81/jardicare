@@ -90,6 +90,42 @@ document.addEventListener('DOMContentLoaded', () => {
 
 ///////////////////////  END  //////////////////////////////////////////////
 
+//Section : services (Animation)
+
+const container = document.querySelector('.logo-container');
+const logoSrc = "/assets/img/svg/jardiCare.svg";
+const logoCount = 150; // nombre de logos
+const animationDuration = 4000; // 4 secondes par cycle
+
+for (let i = 0; i < logoCount; i++) {
+    const logo = document.createElement('img');
+    logo.src = logoSrc;
+    logo.classList.add('animated-logo');
+    container.appendChild(logo);
+
+    // Fonction pour animer le logo à chaque cycle
+    function animateLogo() {
+        const size = Math.random() * 80 + 120; // taille aléatoire
+        logo.style.width = size + 'px';
+        logo.style.height = 'auto';
+        logo.style.top = Math.random() * 90 + '%';
+        logo.style.left = Math.random() * 90 + '%';
+
+        // Restart animation
+        logo.classList.remove('fade-scale');
+        void logo.offsetWidth; // trigger reflow
+        logo.classList.add('fade-scale');
+    }
+
+    // Lancer la première animation
+    animateLogo();
+
+    // Répéter l'animation toutes les X ms
+    setInterval(animateLogo, animationDuration);
+}
+
+///////////////////////  END  //////////////////////////////////////////////
+
 //Mise à niveau : affichage success
 
 document.addEventListener('DOMContentLoaded', () => {
