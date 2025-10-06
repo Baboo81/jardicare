@@ -318,7 +318,7 @@ h3
 {
     width: 100%;
     max-width: 800px; /* largeur max */
-    min-height: 500px; /* hauteur minimale pour desktop */
+    min-height: 550px !important; /* hauteur minimale pour desktop */
     margin-bottom: 2rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border: none;
@@ -477,6 +477,34 @@ h3
         font-size: 1.5rem; /* réduit le titre sur mobile */
     }
 }
+
+/* Mobile - tout doit être visible */
+@media (max-width: 768px) {
+    .card-content {
+        opacity: 1 !important;          /* toujours visible */
+        transform: none !important;    /* plus de translateY */
+        max-height: none;               /* hauteur libre */
+        overflow: visible;              /* pas de scroll */
+        text-align: left;               /* texte aligné à gauche */
+        padding-top: 0.5rem;            /* petit padding */
+        font-size: 0.95rem;             /* taille adaptée aux petits écrans */
+        line-height: 1.4rem;            /* meilleure lisibilité */
+    }
+
+    .card-content p {
+        margin-bottom: 0.6rem;          /* espace entre paragraphes */
+    }
+
+    .card-content ul {
+        padding-left: 1.2rem;           /* indentation des listes */
+        margin-top: 0.5rem;
+    }
+
+    .card-content li {
+        margin-bottom: 0.4rem;
+    }
+}
+
 
 ul > li
 {

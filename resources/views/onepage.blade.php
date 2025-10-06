@@ -80,7 +80,7 @@
                                 <span class="secateur-icon">
                                     <img src="{{ asset('assets/img/svg/secateur.svg') }}" alt="Icon représentant un secateur" class="icon-title">
                                 </span>
-                                {{ $card['title'] ?? '' }}
+                                {!! str_replace(' ', '&nbsp;', $card['title'] ?? '') !!}
                             </h3>
                             <!-- Contenu caché -->
                             <div class="card-content">
@@ -151,7 +151,7 @@
             {{ $data['contact']['main_title'] ?? '' }}
         </h2>
         <div class="row d-flex justify-content-center align-items-center">
-            <div class="col-md-8 registration-form" id="contact-form">
+            <div class="col-md-8 registration-form p-4" id="contact-form">
 
                 {{-- Messages : suuccess/echec --}}
 
