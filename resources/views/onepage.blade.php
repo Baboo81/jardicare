@@ -31,7 +31,7 @@
 {{-- Section : Accueil --}}
 <section class="accueil pt-5 pb-5">
     <div class="container">
-        <div class="row align-items-center scroll-element">
+        <div class="row d-flex align-items-center justify-content-center scroll-element">
             <h1 class="text-center text-muted d-flex justify-content-center align-items-center gap-2 mb-5">
                 <span class="svg-icon">
                     <img src="{{ asset('assets/img/svg/feuille.svg') }}" alt="feuilles verte animée" class="svg-animated">
@@ -46,9 +46,7 @@
                 </article>
             </div>
             <div class="col-md-7 text-center">
-                <div class="img-fluid">
-                    <img src="{{ $data['accueil']['img'] ?? '' }}" alt="Picto représentant deux jardiniers en pleine activité" id="accueilPicto">
-                </div>
+                <img src="{{ $data['accueil']['img'] ?? '' }}" alt="Picto représentant deux jardiniers en pleine activité" id="accueilPicto" class="img-fluid mx-auto d-block">
             </div>
         </div>
     </div>
@@ -61,7 +59,7 @@
 {{-- Section : Services --}}
 <section class="services d-flex justify-content-center align-items-center">
     <div class="container">
-        <h2 class="text-center text-muted  gap-2 mb-5">
+        <h2 class="text-center text-muted">
             <span class="svg-icon">
                 <img src="{{ asset('assets/img/svg/feuille.svg') }}" alt="feuilles verte animée" class="svg-animated">
             </span>
@@ -76,7 +74,7 @@
 
                         <!-- Overlay avec titre -->
                         <div class="card-overlay d-flex flex-column justify-content-center align-items-center text-center p-4">
-                            <h3 class="card-title">
+                            <h3 class="card-title mb-3">
                                 <span class="secateur-icon">
                                     <img src="{{ asset('assets/img/svg/secateur.svg') }}" alt="Icon représentant un secateur" class="icon-title">
                                 </span>
@@ -115,7 +113,7 @@
 <section class="aPropos">
     <div class="container">
         <div class="row d-flex justify-content-center align-items-center blocAbout">
-              <h2 class="text-center aboutTitle my-5 d-flex justify-content-center align-items-center gap-2 mb-5">
+              <h2 class="text-center aboutTitle my-5 d-flex justify-content-center align-items-center">
                     <span class="svg-icon">
                         <img src="{{ asset('assets/img/svg/feuille.svg') }}" alt="feuilles verte animée" class="svg-animated">
                     </span>
