@@ -17,7 +17,7 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <div class="bannerTitle">
-                    <img src="/assets/img/svg/jardiCare.png" alt="Logo JardiCare" class="logo-banner p-3">
+                    <img src="https://ik.imagekit.io/ru3tacudo/jardicare/img/svg/jardiCare.png" alt="Logo JardiCare" class="logo-banner p-3">
                     <h1>
                         {{ $data['banner']['banner_title'] ?? '' }}
                     </h1>
@@ -34,7 +34,7 @@
         <div class="row d-flex align-items-center justify-content-center scroll-element">
             <h1 class="text-center text-muted d-flex justify-content-center align-items-center gap-2 mb-5">
                 <span class="svg-icon">
-                    <img src="{{ asset('assets/img/svg/feuille.svg') }}" alt="feuilles verte animée" class="svg-animated">
+                    <img src='https://ik.imagekit.io/ru3tacudo/jardicare/img/svg/feuille.svg' alt="feuilles verte animée" class="svg-animated">
                 </span>
                 {{ $data['accueil']['main_title'] ?? '' }}
             </h1>
@@ -59,12 +59,12 @@
 {{-- Section : Services --}}
 <section class="services d-flex justify-content-center align-items-center">
     <div class="container">
-        <h2 class="text-center text-muted">
+        <h1 class="text-center text-muted">
             <span class="svg-icon">
-                <img src="{{ asset('assets/img/svg/feuille.svg') }}" alt="feuilles verte animée" class="svg-animated">
+                <img src='https://ik.imagekit.io/ru3tacudo/jardicare/img/svg/feuille.svg' alt="feuilles verte animée" class="svg-animated">
             </span>
             {{ $data['services']['main_title'] ?? '' }}
-        </h2>
+        </h1>
         <div class="row g-4 blocCards d-flex justify-content-center align-items-center">
             <div class="logo-container"></div>
             @foreach($data['services']['cards'] as $card)
@@ -76,7 +76,7 @@
                         <div class="card-overlay d-flex flex-column justify-content-center align-items-center text-center p-4">
                             <h3 class="card-title mb-3">
                                 <span class="secateur-icon">
-                                    <img src="{{ asset('assets/img/svg/secateur.svg') }}" alt="Icon représentant un secateur" class="icon-title">
+                                    <img src='https://ik.imagekit.io/ru3tacudo/jardicare/img/svg/secateur.svg' alt="Icon représentant un secateur" class="icon-title">
                                 </span>
                                 {!! str_replace(' ', '&nbsp;', $card['title'] ?? '') !!}
                             </h3>
@@ -113,14 +113,14 @@
 <section class="aPropos">
     <div class="container">
         <div class="row d-flex justify-content-center align-items-center blocAbout">
-              <h2 class="text-center aboutTitle my-5 d-flex justify-content-center align-items-center">
+              <h1 class="text-center aboutTitle my-5 d-flex justify-content-center align-items-center">
                     <span class="svg-icon">
-                        <img src="{{ asset('assets/img/svg/feuille.svg') }}" alt="feuilles verte animée" class="svg-animated">
+                        <img src='https://ik.imagekit.io/ru3tacudo/jardicare/img/svg/feuille.svg' alt="feuilles verte animée" class="svg-animated">
                     </span>
                     {{ $data['a_propos']['main_title'] ?? '' }}
-                </h2>
+                </h1>
             <div class="col-lg-4 col-md-6 text-center mb-4 mb-md-0">
-                <img src="{{ asset('assets/img/about/profil.jpg') }}" alt="Photo de l'entrepreneur de jardin" class="img-fluid profil">
+                <img src='https://ik.imagekit.io/ru3tacudo/jardicare/img/about/profil.jpg' alt="Photo de l'entrepreneur de jardin" class="img-fluid profil">
             </div>
             <div class="col-lg-8 col-md-6 mt-5">
                 <article class="mx-5 scroll-element">
@@ -142,12 +142,12 @@
 {{-- Section : Contact --}}
 <section class="contact">
     <div class="container">
-        <h2 class="text-center text-muted my-5 d-flex justify-content-center align-items-center gap-2 mb-5">
+        <h1 class="text-center text-muted my-5 d-flex justify-content-center align-items-center gap-2 mb-5">
             <span class="svg-icon">
-                <img src="{{ asset('assets/img/svg/feuille.svg') }}" alt="feuilles verte animée" class="svg-animated">
+                <img src='https://ik.imagekit.io/ru3tacudo/jardicare/img/svg/feuille.svg' alt="feuilles verte animée" class="svg-animated">
             </span>
             {{ $data['contact']['main_title'] ?? '' }}
-        </h2>
+        </h1>
         <div class="row d-flex justify-content-center align-items-center">
             <div class="col-md-8 registration-form p-4" id="contact-form">
 

@@ -152,7 +152,7 @@ h3
 
 .banner
 {
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0)), url(../img/banner/home.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0)), url('https://ik.imagekit.io/ru3tacudo/jardicare/img/banner/home.jpg') center center no-repeat;
     background-size: cover;
     height: 100vh;
     min-height: 500px;
@@ -513,14 +513,14 @@ h3
 /* Mobile - tout doit être visible */
 @media (max-width: 768px) {
     .card-content {
-        opacity: 1 !important;          /* toujours visible */
-        transform: none !important;    /* plus de translateY */
-        max-height: none;               /* hauteur libre */
-        overflow: visible;              /* pas de scroll */
-        text-align: left;               /* texte aligné à gauche */
-        padding-top: 0.5rem;            /* petit padding */
-        font-size: 0.95rem;             /* taille adaptée aux petits écrans */
-        line-height: 1.4rem;            /* meilleure lisibilité */
+        opacity: 1 !important;
+        transform: none !important;
+        max-height: none;
+        overflow: visible;
+        text-align: left;
+        padding-top: 0.5rem;
+        font-size: 0.95rem;
+        line-height: 1.4rem;
     }
 
     .card-content p {
