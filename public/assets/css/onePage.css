@@ -576,7 +576,7 @@ ul > li
 
 .profil
 {
-    border-radius: 50%;
+    border-radius: 8%;
     max-width: 100%;
     height: auto;
 }

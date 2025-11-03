@@ -120,7 +120,7 @@
                     {{ $data['a_propos']['main_title'] ?? '' }}
                 </h1>
             <div class="col-lg-4 col-md-6 text-center mb-4 mb-md-0">
-                <img src='https://ik.imagekit.io/ru3tacudo/jardicare/img/about/profil.jpg' alt="Photo de l'entrepreneur de jardin" class="img-fluid profil">
+                <img src='https://ik.imagekit.io/ru3tacudo/jardicare/img/about/profil.jpeg' alt="Photo de l'entrepreneur de jardin" class="img-fluid profil">
             </div>
             <div class="col-lg-8 col-md-6 mt-5">
                 <article class="mx-5 scroll-element">
